@@ -1,0 +1,20 @@
+{
+  "name": "hello-dagger",
+  "engineVersion": "v0.15.4",
+  "sdk": {
+    "source": "typescript"
+  },
+  "dependencies": [
+    {
+      "name": "hello",
+      "source": "github.com/shykes/hello",
+      "pin": "2d789671a44c4d559be506a9bc4b71b0ba6e23c9"
+    },
+    {
+      "name": "qr",
+      "source": "github.com/jpadams/qr@29b24894996c26b36433e5c988ed68c3fc920c54",
+      "pin": "29b24894996c26b36433e5c988ed68c3fc920c54"
+    }
+  ],
+  "source": ".dagger"
+}
