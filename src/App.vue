@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue';
+const count = ref(0);
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <HelloWorld msg="Hello from Dagger!" />
+      <button @click="count++">Clicked {{ count }} times</button>
     </div>
   </header>
 </template>
