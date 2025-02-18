@@ -9,7 +9,7 @@ const count = ref(0);
   <header>
     <div class="wrapper">
       <HelloWorld msg="Hello from Dagger!" />
-      <button @click="count++">Clicked {{ count }} times</button>
+      <button class="green-button" @click="count++">Clicked {{ count }} times</button>
     </div>
   </header>
 </template>
@@ -18,6 +18,15 @@ const count = ref(0);
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .logo {
